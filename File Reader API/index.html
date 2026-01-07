@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Reader API</title>
+</head>
+<body>
+    <input type = "file" id = "textfile">
+    <pre class = "content1"></pre>
+    <input type = "file" accept = "image/*" id = "imagefile">
+    <img class = "content2" alt = "img" width = "300" height="200"></img>
+    <script>
+        let txtInput = document.querySelector('#textfile');
+        let imgInput = document.querySelector('#imagefile')
+        let outputEle1 = document.querySelector('.content1');
+        let outputEle2 = document.querySelector('.content2');
+
+        txtInput.addEventListener('change', () => {
+            let file = txtInput.files[0];
+            let fr = new FileReader();
+            fr.readAsText(file);
+            fr.onload = () => {
+                outputEle1.textContent = fr.result;
+            };
+        });
+
+        imgInput.addEventListener('change', () =>{
+            let file = imgInput.files[0];
+            let fr = new FileReader();
+            fr.readAsDataURL(file);
+            fr.onload = () =>{
+                outputEle2.src = fr.result;
+            };
+        });
+    </script>
+</body>
+</html>
