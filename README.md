@@ -51,8 +51,8 @@ quests/
 
 1. Clone or download the repository:
 ```
-git clone https://github.com/your-username/js-practicum.git
-cd js-practicum
+git clone https://github.com/your-username/JavaScript-Projects.git
+cd JavaScript-Projects
 ```
 2. Start with lower-numbered projects.
 3. Read the project README carefully.
