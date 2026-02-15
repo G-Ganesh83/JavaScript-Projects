@@ -1,9 +1,9 @@
 # JS Practicum
 
 <!-- <p align="center"><strong>⭐ If this practicum helped you strengthen your JavaScript skills, consider starring the repository.</strong></p> -->
-<video width="800" height = "400" autoplay muted playsinline>
-  <source src="video.mp4" type="video/mp4">
-</video>
+<p align="center">
+  <img src="video.gif" width="600">
+</p>
 
 
 A structured collection of JavaScript exercises designed for beginners and intermediate learners to build **strong foundational and practical skills**.  
